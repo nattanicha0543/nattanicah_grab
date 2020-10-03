@@ -1,0 +1,53 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar navbar-light bg-light">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+
+                    {{!-- <a class="nav-link" href="">Grab Food</a> --}}
+                    <img src="../../img/1.png" alt="" width="220px">
+
+                </li>
+            </ul>
+
+            <span class="log">
+                เข้าสู่ระบบ
+            </span>
+
+        </div>
+    </div>
+</nav><br>
+
+<div class="container">
+
+    <br>
+    <div class="row">
+        {{#each restaurants}}
+        <div class="col-4">
+
+            <div class="card-deck" style=" height: 24rem;">
+                <div class="card">
+                    <img src="{{imageURL}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{name}}</h5>
+                        <b class="card-text">ที่อยู่ของร้าน : {{add}}</b><br>
+                        <b class="card-text">อาหารประเภท : {{type}}</b><br>
+                        <b class="card-text">ราคา : {{price}} บาท</b><br><br>
+                        <button type="button" class="btn btn-outline-warning btn-sm">เพิ่มเติม</button> &nbsp;&nbsp;
+                        <button type="button" class="btn btn-outline-success btn-sm">สั่งซื้อ</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <br><br>
+        </div>
+        {{/each}}
+    </div>
+</div>

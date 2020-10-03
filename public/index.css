@@ -1,0 +1,30 @@
+
+
+#imageURL{ 
+    height: 100px;
+    width: 50px;
+}
+
+/* .navbar{
+    color: aquamarine;
+} */
+
+.card-title {
+    font-weight: bolder;
+    font-size: 19px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.card-text{
+    font-family: 'Bai Jamjuree', sans-serif;
+
+}
+
+a{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.log{
+    color: rgb(11, 102, 26);
+}
